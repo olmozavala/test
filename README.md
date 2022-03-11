@@ -1,4 +1,4 @@
 # test
 Repository for testing
 
-[sopas](README.md)
+[sopas](del.txt)
