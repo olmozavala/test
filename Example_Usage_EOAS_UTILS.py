@@ -1,5 +1,6 @@
 import sys
-sys.path.append("hycom_utils/python")
+sys.path.append("eoas_pyutils/hycom_utils/python")
+sys.path.append("eoas_pyutils/")
 
 from hycom.io import read_hycom_fields, subset_hycom_field, read_hycom_coords
 from hycom.info import read_field_names
@@ -7,8 +8,8 @@ from viz_utils.eoa_viz import EOAImageVisualizer
 
 ## Reading data
 print("Reading data...")
-input_file = "./hycom_utils/test_data/archv.2009_153_00.a"
-coords_file = "./hycom_utils/test_data/regional.grid.a"
+input_file = "./eoas_pyutils/hycom_utils/test_data/archv.2009_153_00.a"
+coords_file = "./eoas_pyutils/hycom_utils/test_data/regional.grid.a"
 layers = [0, 1, 2, 3]  # Depth layers we want to read
 print(F"The fields available are: {read_field_names(input_file)}")
 # Reading specific field and layers
