@@ -3,7 +3,8 @@ name: Hello Workflow
 on: [push]
 
 jobs:
-  build-linux:
+  myjob:
+    name: Hello Job
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
@@ -11,3 +12,5 @@ jobs:
     steps:
     - name: Hello Step
       run: echo "Yeah babe"
+    - name: Print env
+      run: env | sort
